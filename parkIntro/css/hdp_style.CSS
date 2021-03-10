@@ -1,0 +1,16 @@
+*{margin: 0;padding: 0;text-decoration: none;box-sizing:border-box;}
+
+body{
+	font-family: 'Arial','微軟正黑體';
+	color: #333;overflow-y:visible;
+}
+#container_text{
+    padding-top:30px;position:relative;
+    width:1000px;margin:auto;line-height:30px;
+}
+
+.content{color:black;}
+
+p{margin:10px 0; color:red;}
+
+.info{display:block;margin-bottom:30px;}

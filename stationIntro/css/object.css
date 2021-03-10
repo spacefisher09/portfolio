@@ -1,0 +1,174 @@
+/*--主場景物件--*/
+.main-content .girl{width: 180px;}
+.main-content ul li div >*{position:relative;font-family:'微軟正黑體';font-size:16px;}
+.main-content h2{display: inline-block;margin-right:8px;}
+.main-content button{
+    background-image:url(../images/cloud-Q1.png);border:none;
+    color:#e45749;width:340px;height:226px;line-height:24px;
+    text-align:left;letter-spacing:1px;display:block;
+    z-index:1;padding:0 18px 25px 38px;
+    background-color:transparent;
+}
+.main-content button[class*="cld"]:before{
+    font-family:'FontAwesome';font-size:64px;
+    display:inline-block;line-height:64px;width:70px;
+}
+.main-content button[class*="cld-A"]{
+    font-size:16px;line-height:25px;color:#00bfaa;
+}
+.main-content button[class*="cld-Q"]:before{
+    content:'\f056';margin:0 0 16px 60px;}
+.main-content button[class*="cld-A"]:before{
+    content:'\f005';margin:0 0 10px 60px;}
+.main-content span[class*='emo']{
+    display:block;background-image:url(../images/S-cld.png);width:67px;height:70px;    
+}
+.main-content span[class*='emo']:before{
+    font-family:'FontAwesome';font-size:2.5em;
+    display:block;
+}
+.main-content .emo_S{color:#e45749;}
+.main-content .emo_H{color:#00bfaa;}
+.main-content .emo_S:before{
+    content:'\f12a';padding:15px 30px;}
+.main-content .emo_H:before{
+    content:'\f004';padding:17px 20px;}
+#scene0_ob .girl{top:160px; left:-450px;}
+
+/*場景1*/
+#scene1_ob .ground-bk{
+    width:288px;height:13px;left:516px;top:107px;
+    z-index:-1;
+}
+#scene1_ob [class*="tri"]{
+    width: 0;height: 0;border-style: solid;
+    display:inline-block;vertical-align:super;
+}
+#scene1_ob .tri-Lbk{
+    border-width: 13px 45px 0 0;
+    border-color: #b4b4b5 transparent transparent transparent;
+}
+#scene1_ob .tri-Rbk{
+    border-width: 0 45px 13px  0;
+    border-color: transparent #b4b4b5 transparent transparent;float:right;
+}
+#scene1_ob .girl{top:140px;}
+#scene1_ob .car{z-index:1;top:145px;left:15px;}
+#scene1_ob .cld-Q{top:90px;left:170px;}
+#scene1_ob .cld-A{top:90px;left:170px;}
+
+/*場景2*/
+#scene2_ob .girl{top:-75px; left:70px;}
+#scene2_ob .cld-Q1{top:80px; left:120px;}
+#scene2_ob .cld-Q2{top:-220px; left:680px;}
+#scene2_ob .cld-A {top:80px; left:120px;}
+#scene2_ob button:nth-child(2).cld-A{top:-220px; left:680px;}
+#scene2_ob .ladr-bk{
+    display:none;width: 35px;height: 62px;z-index:-1;
+    border-style: solid;border-width: 0 0 62px 260px;
+    border-color: transparent transparent #a4c3df transparent;box-sizing:initial;top:-216px;left:360px;
+}
+#scene2_ob .window{
+    top:-325px; left:300px;width:125px;height:123px;
+    background-color:white;display:inline-block;
+    margin-left:67px;z-index:-1;border-top:4px solid #eaaf62;
+    border-bottom:4px solid #eaaf62;
+}
+#scene2_ob .window span{
+    display:block;width:55px;height:17px;
+    background-color:#96584d;margin:98px auto 0 auto;
+}
+
+/*場景3*/
+#scene3_ob .girl{top:-5px;left:100px;z-index:1}
+#scene3_ob .cld-Q{top:10px;left:680px;}
+#scene3_ob .cld-A {top:10px; left:680px;}
+#scene3_ob .man{width:145px;top:0px;left:220px;}
+#scene3_ob span[class*='emo']{top:-340px;left:520px;}
+#scene3_ob img[class*='chkP'] {top:-232px; left:515px;z-index:-1;}
+#scene3_ob .chkP + .chkP,.chkP_hid{margin-left:110px;}
+
+/*場景4*/
+#scene4_ob .cld-Q{top:40px;left:500px;}
+#scene4_ob .cld-A{top:40px;left:500px;}
+#scene4_ob .girl{top:-35px;left:-130px;}
+#scene4_ob .eltr{top:-58px;left:400px;opacity:0.0;}
+#scene4_ob .door{
+    display:block;width:210px;height:289px;
+    top:-351px;left:425px;opacity:0.0;
+}
+#scene4_ob .door span{
+    display:inline-block;width:50%;height:100%;
+    background-color:#b7dcf1;
+}
+#scene4_ob .door span + span{
+    float:right;border-left:1px solid #475663;
+}
+
+/*場景5*/
+#scene5_ob .cld-Q{top:30px;left:280px;}
+#scene5_ob .cld-A{top:30px;left:280px;}
+#scene5_ob .old{top:68px;left:550px;}
+#scene5_ob span[class*='emo']{top:-220px;left:620px;opacity:1.0;}
+#scene5_ob .stair{
+    top:-594px;left:350px;width:70px;height:50px;
+    display:block;z-index:-1;background:#9E9D9E;
+    -webkit-transform: skew(75deg);-o-transform: skew(75deg);
+    -moz-transform: skew(75deg);-ms-transform: skew(75deg);
+    -sand-transform: skew(75deg);
+    display:none;
+}
+#scene5_ob .train{top:-432px;left:8px;}
+
+/*場景6*/
+#scene6_ob img{top:10px; left:90px;}
+
+
+
+/*--主視覺區動畫物件--*/
+#scene0_ob .cld-T{
+    top:50px;left: 10px;
+    animation: cloud 1s infinite;
+    animation-timing-function:linear;
+    animation-direction: alternate-reverse;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: alternate-reverse;
+}
+#scene0_ob .cld-1{top:-80px;left: 245px;}
+@keyframes cloud{
+    from{
+        filter:drop-shadow(0px 0px 2px #c0c0c0);
+        -webkit-filter:drop-shadow(0px 0px 2px rgba(0,0,0,0.3));
+    }
+    to{
+        filter:drop-shadow(0px 0px 10px #c0c0c0);
+        -webkit-filter:drop-shadow(0px 0px 10px rgba(0,0,0,0.3));
+    }
+}
+
+#scene0_ob .apln{
+    top: -68px; left: 430px;
+    animation: flag 2s infinite;
+    animation-timing-function:linear;
+    animation-direction: alternate;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: linear;
+}
+@keyframes flag{
+    from{top:-70px;}
+    to{top:-62px;}
+}
+
+#scene5_ob .walk{
+    animation: walk 1s infinite;
+    animation-direction: alternate;
+    -webkit-animation-direction: alternate;
+    animation-timing-function:linear;
+    -webkit-animation-timing-function:linear;
+}
+@keyframes walk{
+    from{transform:rotate(0deg);} 
+    to{transform:rotate(10deg);}
+}
+
+

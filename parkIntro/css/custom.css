@@ -1,0 +1,92 @@
+*{margin:0;padding:0;font-family:'微軟正黑體';}
+
+body{cursor:url('http://hl.tist.com.tw/test/parkIntro/images/rolling.png'),auto;}
+
+div{position:fixed;}
+
+.notice{
+    padding:0 .5em;line-height:1.5em;font-size:1.5em;
+    background-color:aqua;left:35%;
+}
+
+#skrollr-body{
+    width:6500px;overflow-x:hidden;height:795px;
+    background-image:url(../images/BG.jpg);display:none;
+    background-repeat:no-repeat;font-size:16px;
+}
+
+#M_cha{
+    height:274px;width:275px;top:380px;position:absolute;
+    background-image:url(../images/mainC.png);z-index:2;
+}
+
+.scene{
+    height:750px;width:5170px;left:1135px;
+}
+[class*='square']{position:absolute;z-index:1;}
+[class*='pic']{position:absolute;z-index:0;}
+
+.scene .square1{
+    left:50px;width:535px;height:367px;
+    background-image:url(../images/sqr1.png);
+}
+.scene .square2{
+    left:900px;width:596px;height:442px;
+    background-image:url(../images/sqr2.png);
+}
+.scene .pic2{
+    left:1365px;width:352px;height:455px;
+    background-image:url(../images/pic2.png);
+}
+.scene .square3{
+    left:1750px;width:322px;height:442px;
+    background-image:url(../images/sqr3.png);
+}
+.scene .square4{
+    left:2330px;width:551px;height:472px;
+    background-image:url(../images/sqr4.png);
+}
+.scene .pic4{
+    left:2250px;width:291px;height:318px;
+    background-image:url(../images/pic4.png);
+}
+.scene .square5{
+    left:3200px;width:661px;height:603px;
+    background-image:url(../images/sqr5.png);
+}
+.scene .pic5{
+    left:3260px;width:360px;height:72px;
+    background-image:url(../images/pic5.png);
+}
+.scene .square6{
+    left:4350px;width:642px;height:454px;
+    background-image:url(../images/sqr6.png);
+}
+.scene .pic6{
+    left:4617px;width:350px;height:258px;
+    background-image:url(../images/pic6.png);
+}
+
+.footer{
+    position:absolute;z-index:1;top:670px;
+    width:980px;text-align:center;line-height:25px;
+    color:white;font-weight:bold;
+}
+.footer .nav{
+    color:white;font-size:24px;
+}
+.nav li{display:inline-block;margin-left:.6em;}
+.nav li>span{
+    width:26px;height:26px;background-color:white;
+    display:inline-block;color:#009245;margin-right:.2em;
+    border-radius:3px;padding:2px;
+}
+.nav li:after{
+    content:'';background-image:url(../images/tri-arrow.png);
+    width:20px;height:31px;display:inline-block;
+    vertical-align:middle;margin-left:.3em;
+}
+
+@media(max-height:768px){
+    body{overflow-x:auto;}
+}
