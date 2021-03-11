@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="zh-Hant">
 
@@ -7,93 +6,260 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <!-- 從GitHub提供具有適當Content-Type標頭的原始文件 -->
   <script src="https://rawgithub.com/ai/autoprefixer-rails/master/vendor/autoprefixer.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
   <title>切版整理目錄</title>
   <style>
-  * {
-    font-family: '微軟正黑體';
-  }
+    * {
+      font-family: '微軟正黑體';
+    }
+
+    body {
+      background-image: url("index-img/bg2.jpg");
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .nav-wrapper {
+      width: 100%;
+      position: -webkit-sticky;
+      /* Safari */
+      position: sticky;
+      top: 0;
+      background-color: #fff;
+      box-shadow: 0 0 3px 3px #bbb;
+      z-index: 2;
+    }
+
+    .grad-bar {
+      width: 100%;
+      height: 5px;
+      background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+      background-size: 400% 400%;
+      -webkit-animation: gradbar 15s ease infinite;
+      -moz-animation: gradbar 15s ease infinite;
+      animation: gradbar 15s ease infinite;
+    }
+
+    @keyframes gradbar {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    .card-img-overlay{background-color:rgb(193 23 47 / 90%);top:70%;}
+    img {min-height: 220px;}
+    @media(max-width:600px){
+    img {min-height:auto;}
+    .card-img-overlay{height:40%;top:60%;}
+    }
   </style>
 </head>
 
 <body>
+  <div class="nav-wrapper pt-1">
+    <div class="grad-bar position-absolute" style="z-index:1; top:0;"></div>
+    <nav class="navbar navbar-dark bg-white py-3">
+      <h4 class="w-100 text-center text-black-50 font-weight-bold m-0">作品集列表</h4>
+    </nav>
+  </div>
   <div class="container py-5">
-    <div class="tab-content">
-      <div class="tab-pane pt-3 active" id="home" role="tabpanel" aria-labelledby="home-tab">
-        <h4 class="table-danger text-center py-2 mb-3">作品展示連結</h4>
-        <a href="stationIntro/" class="btn btn-lg mb-2 btn-outline-danger w-100" target="blank">輔具資源入口網-無障礙生活專區-車站介紹</a>
-        <a href="parkIntro/index.html" class="btn btn-lg mb-2 btn-outline-danger w-100" target="blank">輔具資源入口網-無障礙生活專區-公園介紹</a>
-        <a href="sfaa-travel/index.html" class="btn btn-lg mb-2 btn-outline-danger w-100" target="blank">社家署--社區關懷據點服務入口網-旅遊專區</a>
+    <div class="tab-content p-3" style="background-color:rgba(255,255,255,0.5) ;">
+      <div class="d-block">
+        <h4 class="border border-4 border-white table-danger alert-danger text-center py-2 mb-3">作品展示連結</h4>
+        <div class="row m-0 p-2">
+          <div class="col-lg-4 col-md-6 mb-2">
+            <a href="stationIntro/"
+              class="card p-0 text-decoration-none text-danger bg-dark text-white position-relative border overflow-hidden d-block">
+              <img src="index-img/crop1.jpg" class="card-img-top">
+              <div class="card-img-overlay py-2 rounded-0">
+                <p class="card-text h5 m-0 text-truncate">
+                  <i class="fas fa-link mr-2"></i>輔具資源入口網-無障礙生活專區-車站介紹
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-2">
+            <a href="parkIntro/"
+              class="card p-0 text-decoration-none text-danger bg-dark text-white position-relative border overflow-hidden d-block">
+              <img src="index-img/crop2.jpg" class="card-img-top">
+              <div class="card-img-overlay py-2 rounded-0">
+                <p class="card-text h5 m-0 text-truncate">
+                  <i class="fas fa-link mr-2"></i>輔具資源入口網-無障礙生活專區-公園介紹
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-2">
+            <a href="sfaa-travel/"
+              class="card p-0 text-decoration-none text-danger bg-dark text-white position-relative border overflow-hidden d-block">
+              <img src="index-img/crop3-1.png" class="card-img-top">
+              <div class="card-img-overlay py-2 rounded-0">
+                <p class="card-text h5 m-0 text-truncate">
+                  <i class="fas fa-link mr-2"></i>社家署--社區關懷據點服務入口網-旅遊專區
+                </p>
+              </div>
+            </a>
+          </div>
+
+        </div>
         <hr>
-        <h4 class="table-info text-center py-2 mb-3">過去參與專案作品列表</h4>
-        <span class="btn btn-lg btn-outline-info w-100" target="blank">內政部--地方公職人員資訊服務網</span>
-        <hr>
-        <span class="btn btn-lg mb-2 btn-outline-info w-100" target="blank">衛生福利部--兒童與少年未來教育及發展帳戶管理系統_後台old</span>
-        <span class="btn btn-lg mb-2 btn-outline-info w-100" target="blank">衛生福利部--兒童與少年未來教育及發展帳戶管理系統_後台</span>
-        <span class="btn btn-lg mb-2 btn-outline-info w-100" target="blank">衛生福利部--追蹤顯示多元平台</span>
-        <span class="btn btn-lg mb-2 btn-outline-info w-100" target="blank">衛生福利部--服務追蹤顯示平台</span>
-        <span class="btn btn-lg mb-2 btn-outline-info w-100" target="blank">衛生福利部--全國社福津貼給付資料比對資訊系統登入</span>
-        <hr>
-        <span class="btn btn-lg mb-2 btn-outline-info w-100" target="blank">社家署--身心障礙服務入口網</span>
-        <span class="btn btn-lg mb-2 btn-outline-info w-100" target="blank">社家署--托育人員登記管理資訊網_前台</span>
-        <span class="btn btn-lg mb-2 btn-outline-info w-100" target="blank">社家署--托育人員登記管理資訊系統_後台</span>
-        <span class="btn btn-lg mb-2 btn-outline-info w-100" target="blank">社家署--托育人員登記管理資訊系統_GIS後台</span>
-        <span class="btn btn-lg mb-2 btn-outline-info w-100" target="blank">社家署--托育人員登記管理資訊系統_後台+整併RD後台框架</span>
-        <span class="btn btn-lg mb-2 btn-outline-info w-100" target="blank">社家署--公益彩券回饋金審查資訊網</span>
-        <span class="btn btn-lg mb-2 btn-outline-info w-100" target="blank">社家署--社福補助作業系統-後台管理整合單一簽入平台_後台</span>
-        <span class="btn btn-lg mb-2 btn-outline-info w-100" target="blank">社家署--輔具資源入口網_部分區塊追加</span>
-        <span class="btn btn-lg mb-2 btn-outline-info w-100" target="blank">社家署--輔具資源入口網-CNS 15390國家輔具分類標準專區</span>
-        <span class="btn btn-lg mb-2 btn-outline-info w-100" target="blank">社家署--輔具資源入口網-無障礙生活專區</span>
-        <span class="btn btn-lg mb-2 btn-outline-info w-100" target="blank">社家署--輔具資源入口網-政府輔具資源服務與補助</span>
-        <span class="btn btn-lg mb-2 btn-outline-info w-100" target="blank">社家署--社區關懷據點服務入口網-社區金點獎</span>
-        <span class="btn btn-lg mb-2 btn-outline-info w-100" target="blank">社家署--社區照顧關懷據點服務入口網_後台</span>
-        <span class="btn btn-lg mb-2 btn-outline-info w-100" target="blank">社家署--社區關懷據點服務入口網-旅遊專區</span>
-        <hr>
-        <span class="btn btn-lg mb-2 btn-outline-info w-100" target="blank">勞發署--跨國勞動力權益維護資訊網站</span>
-        <span class="btn btn-lg mb-2 btn-outline-info w-100" target="blank">外勞轉換雇主舊系統--表格</span>
-        <hr>
-        <span class="btn btn-lg mb-2 btn-outline-info w-100" target="blank">嘉義小幫手/台中小幫手/台東小幫手/宜蘭小幫手/雲林小幫手</span>
-        <span class="btn btn-lg mb-2 btn-outline-info w-100" target="blank">在地行動</span>
-        <hr>
-        <span class="btn btn-lg mb-2 btn-outline-info w-100" target="blank">臺中市政府社會局--社服溫度計</span>
-        <span class="btn btn-lg mb-2 btn-outline-info w-100" target="blank">臺中市政府社會局--數據分析平台</span>
-        <span class="btn btn-lg mb-2 btn-outline-info w-100" target="blank">臺中市政府社會局--報表匯整系統</span>
-        <span class="btn btn-lg mb-2 btn-outline-info w-100" target="blank">臺中市政府社會局--福利躍升後台系統(獨老)</span>
-        <span class="btn btn-lg mb-2 btn-outline-info w-100" target="blank">臺中市政府社會局--福利躍升後台系統(獨老版本2)</span>
-        <span class="btn btn-lg mb-2 btn-outline-info w-100" target="blank">臺中市政府社會局-單一入口登入</span>
-        <hr>
-        <span class="btn btn-lg mb-2 btn-outline-info w-100" target="blank">花蓮縣政府社會處-社會福利整合平台</span>
-        <hr>
-        <span class="btn btn-lg mb-2 btn-outline-info w-100" target="blank">彰化縣政府--福利小幫手</span>
-        <span class="btn btn-lg mb-2 btn-outline-info w-100" target="blank">彰化縣政府--社區產業市集</span>
-        <span class="btn btn-lg mb-2 btn-outline-info w-100" target="blank">彰化縣政府--社區產業市集_登入頁</span>
-        <span class="btn btn-lg mb-2 btn-outline-info w-100" target="blank">彰化縣政府--彰化縣社會福利管理系統</span>
-        <span class="btn btn-lg mb-2 btn-outline-info w-100" target="blank">彰化縣政府社會局--幸福小舖</span>
-        <span class="btn btn-lg mb-2 btn-outline-info w-100" target="blank">彰化縣政府--彰化教育訓練系統需求</span>
-        <span class="btn btn-lg mb-2 btn-outline-info w-100" target="blank">彰化縣政府--預算執行控管系統</span>
-        <span class="btn btn-lg mb-2 btn-outline-info w-100" target="blank">彰化縣環境保護局--民意信箱</span>
-        <hr>
-        <span class="btn btn-lg mb-2 btn-outline-info w-100" target="blank">雲林縣政府--E化團體網</span>
-        <span class="btn btn-lg mb-2 btn-outline-info w-100" target="blank">雲林縣政府--實物銀行</span>
-        <span class="btn btn-lg mb-2 btn-outline-info w-100" target="blank">雲林縣政府--福利資訊入口網</span>
-        <hr>
-        <span class="btn btn-lg mb-2 btn-outline-info w-100" target="blank">高雄市政府教育局--高雄市學前教育補助系統_後台</span>
-        <hr>
-        <span class="btn btn-lg mb-2 btn-outline-info w-100" target="blank">南投縣政府--福利資訊入口網(行動躍升平台)</span>
-        <span class="btn btn-lg mb-2 btn-outline-info w-100" target="blank">南投縣政府--福利資訊入口網-福利小幫手</span>
-        <hr>
-        <span class="btn btn-lg mb-2 btn-outline-info w-100" target="blank">臺東縣政府社會處--線上申辦</span>
-        <hr>
-        <span class="btn btn-lg mb-2 btn-outline-info w-100" target="blank">金門縣政府--行動躍升服務資源整合平台</span>
-        <hr>
-        <span class="btn btn-lg mb-2 btn-outline-info w-100" target="blank">新竹縣新埔鎮公所--全球資訊網-進入頁</span>
-        <hr>
+        <h4 class="border border-4 border-white table-info alert-info text-center py-2 mb-3">過去參與專案作品一覽</h4>
+        <hr class="text-info my-2">
+        <span class="py-2 bg-white d-block text-center text-info mb-1 w-100">
+          <i class="fas fa-flag mr-2"></i>
+          內政部--地方公職人員資訊服務網</span>
+        <hr class="text-info my-2">
+        <span class="py-2 bg-white d-block text-center text-info mb-1 w-100">
+          <i class="fas fa-flag mr-2"></i>
+          衛生福利部--兒童與少年未來教育及發展帳戶管理系統_後台</span>
+        <span class="py-2 bg-white d-block text-center text-info mb-1 w-100">
+          <i class="fas fa-flag mr-2"></i>
+          衛生福利部--追蹤顯示多元平台</span>
+        <span class="py-2 bg-white d-block text-center text-info mb-1 w-100">
+          <i class="fas fa-flag mr-2"></i>
+          衛生福利部--服務追蹤顯示平台</span>
+        <span class="py-2 bg-white d-block text-center text-info mb-1 w-100">
+          <i class="fas fa-flag mr-2"></i>
+          衛生福利部--全國社福津貼給付資料比對資訊系統登入</span>
+        <hr class="text-info my-2">
+        <span class="py-2 bg-white d-block text-center text-info mb-1 w-100">
+          <i class="fas fa-flag mr-2"></i>
+          社家署--身心障礙服務入口網</span>
+        <span class="py-2 bg-white d-block text-center text-info mb-1 w-100">
+          <i class="fas fa-flag mr-2"></i>
+          社家署--托育人員登記管理資訊網_前台</span>
+        <span class="py-2 bg-white d-block text-center text-info mb-1 w-100">
+          <i class="fas fa-flag mr-2"></i>
+          社家署--托育人員登記管理資訊系統_後台</span>
+        <span class="py-2 bg-white d-block text-center text-info mb-1 w-100">
+          <i class="fas fa-flag mr-2"></i>
+          社家署--公益彩券回饋金審查資訊網</span>
+        <span class="py-2 bg-white d-block text-center text-info mb-1 w-100">
+          <i class="fas fa-flag mr-2"></i>
+          社家署--社福補助作業系統-後台管理整合單一簽入平台_後台</span>
+        <span class="py-2 bg-white d-block text-center text-info mb-1 w-100">
+          <i class="fas fa-flag mr-2"></i>
+          社家署--輔具資源入口網_部分區塊追加</span>
+        <span class="py-2 bg-white d-block text-center text-info mb-1 w-100">
+          <i class="fas fa-flag mr-2"></i>
+          社家署--輔具資源入口網-CNS 15390國家輔具分類標準專區</span>
+        <span class="py-2 bg-white d-block text-center text-info mb-1 w-100">
+          <i class="fas fa-flag mr-2"></i>
+          社家署--輔具資源入口網-無障礙生活專區</span>
+        <span class="py-2 bg-white d-block text-center text-info mb-1 w-100">
+          <i class="fas fa-flag mr-2"></i>
+          社家署--輔具資源入口網-政府輔具資源服務與補助</span>
+        <span class="py-2 bg-white d-block text-center text-info mb-1 w-100">
+          <i class="fas fa-flag mr-2"></i>
+          社家署--社區關懷據點服務入口網-社區金點獎</span>
+        <span class="py-2 bg-white d-block text-center text-info mb-1 w-100">
+          <i class="fas fa-flag mr-2"></i>
+          社家署--社區照顧關懷據點服務入口網_後台</span>
+        <span class="py-2 bg-white d-block text-center text-info mb-1 w-100">
+          <i class="fas fa-flag mr-2"></i>
+          社家署--社區關懷據點服務入口網-旅遊專區</span>
+        <hr class="text-info my-2">
+        <span class="py-2 bg-white d-block text-center text-info mb-1 w-100">
+          <i class="fas fa-flag mr-2"></i>
+          勞發署--跨國勞動力權益維護資訊網站</span>
+        <span class="py-2 bg-white d-block text-center text-info mb-1 w-100">
+          <i class="fas fa-flag mr-2"></i>
+          外勞轉換雇主系統--表格</span>
+        <hr class="text-info my-2">
+        <span class="py-2 bg-white d-block text-center text-info mb-1 w-100">
+          <i class="fas fa-flag mr-2"></i>
+          嘉義小幫手/台中小幫手/台東小幫手/宜蘭小幫手/雲林小幫手</span>
+        <span class="py-2 bg-white d-block text-center text-info mb-1 w-100">
+          <i class="fas fa-flag mr-2"></i>
+          在地行動</span>
+        <hr class="text-info my-2">
+        <span class="py-2 bg-white d-block text-center text-info mb-1 w-100">
+          <i class="fas fa-flag mr-2"></i>
+          臺中市政府社會局--社服溫度計</span>
+        <span class="py-2 bg-white d-block text-center text-info mb-1 w-100">
+          <i class="fas fa-flag mr-2"></i>
+          臺中市政府社會局--數據分析平台</span>
+        <span class="py-2 bg-white d-block text-center text-info mb-1 w-100">
+          <i class="fas fa-flag mr-2"></i>
+          臺中市政府社會局--報表匯整系統</span>
+        <span class="py-2 bg-white d-block text-center text-info mb-1 w-100">
+          <i class="fas fa-flag mr-2"></i>
+          臺中市政府社會局--福利躍升後台系統</span>
+        <span class="py-2 bg-white d-block text-center text-info mb-1 w-100">
+          <i class="fas fa-flag mr-2"></i>
+          臺中市政府社會局-單一入口登入</span>
+        <hr class="text-info my-2">
+        <span class="py-2 bg-white d-block text-center text-info mb-1 w-100">
+          <i class="fas fa-flag mr-2"></i>
+          花蓮縣政府社會處-社會福利整合平台</span>
+        <hr class="text-info my-2">
+        <span class="py-2 bg-white d-block text-center text-info mb-1 w-100">
+          <i class="fas fa-flag mr-2"></i>
+          彰化縣政府--福利小幫手</span>
+        <span class="py-2 bg-white d-block text-center text-info mb-1 w-100">
+          <i class="fas fa-flag mr-2"></i>
+          彰化縣政府--社區產業市集</span>
+        <span class="py-2 bg-white d-block text-center text-info mb-1 w-100">
+          <i class="fas fa-flag mr-2"></i>
+          彰化縣政府--彰化縣社會福利管理系統</span>
+        <span class="py-2 bg-white d-block text-center text-info mb-1 w-100">
+          <i class="fas fa-flag mr-2"></i>
+          彰化縣政府社會局--幸福小舖</span>
+        <span class="py-2 bg-white d-block text-center text-info mb-1 w-100">
+          <i class="fas fa-flag mr-2"></i>
+          彰化縣政府--彰化教育訓練系統需求</span>
+        <span class="py-2 bg-white d-block text-center text-info mb-1 w-100">
+          <i class="fas fa-flag mr-2"></i>
+          彰化縣政府--預算執行控管系統</span>
+        <span class="py-2 bg-white d-block text-center text-info mb-1 w-100">
+          <i class="fas fa-flag mr-2"></i>
+          彰化縣環境保護局--民意信箱</span>
+        <hr class="text-info my-2">
+        <span class="py-2 bg-white d-block text-center text-info mb-1 w-100">
+          <i class="fas fa-flag mr-2"></i>
+          雲林縣政府--E化團體網</span>
+        <span class="py-2 bg-white d-block text-center text-info mb-1 w-100">
+          <i class="fas fa-flag mr-2"></i>
+          雲林縣政府--實物銀行</span>
+        <span class="py-2 bg-white d-block text-center text-info mb-1 w-100">
+          <i class="fas fa-flag mr-2"></i>
+          雲林縣政府--福利資訊入口網</span>
+        <hr class="text-info my-2">
+        <span class="py-2 bg-white d-block text-center text-info mb-1 w-100">
+          <i class="fas fa-flag mr-2"></i>
+          高雄市政府教育局--高雄市學前教育補助系統_後台</span>
+        <hr class="text-info my-2">
+        <span class="py-2 bg-white d-block text-center text-info mb-1 w-100">
+          <i class="fas fa-flag mr-2"></i>
+          南投縣政府--福利資訊入口網</span>
+        <hr class="text-info my-2">
+        <span class="py-2 bg-white d-block text-center text-info mb-1 w-100">
+          <i class="fas fa-flag mr-2"></i>
+          臺東縣政府社會處--線上申辦</span>
+        <hr class="text-info my-2">
+        <span class="py-2 bg-white d-block text-center text-info mb-1 w-100">
+          <i class="fas fa-flag mr-2"></i>
+          金門縣政府--行動躍升服務資源整合平台</span>
+        <hr class="text-info my-2">
+        <span class="py-2 bg-white d-block text-center text-info mb-1 w-100">
+          <i class="fas fa-flag mr-2"></i>
+          新竹縣新埔鎮公所--全球資訊網-進入頁</span>
+        <hr class="text-info my-2">
       </div>
 
     </div>
